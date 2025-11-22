@@ -28,8 +28,8 @@ Vagrant.configure("2") do |config|
   SHELL
 
   config.vm.provision "shell", inline: <<-SHELL
-    sudo lvcreate -L 800M -n lv1 vg_data
-    sudo lvcreate -L 800M -n lv2 vg_data
+    sudo lvcreate -L 790M -n lv1 vg_data
+    sudo lvcreate -L 790M -n lv2 vg_data
   SHELL
 
   config.vm.provision "shell", inline: <<-SHELL
